@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using static Microsoft.AspNetCore.Http.StatusCodes;
 using StockExchange.Api.Models;
 using StockExchange.Api.Interfaces;
@@ -25,6 +26,7 @@ public class StockController : ControllerBase
     }
 
     [HttpGet]
+    //[Authorize("Api.Reader")]
     [ProducesResponseType(typeof(ApiResponse<ICollection<StockValue>>), Status200OK)]
     [ProducesResponseType(typeof(ApiErrorResponse), Status500InternalServerError)]
     [ProducesResponseType(Status400BadRequest)]

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using static Microsoft.AspNetCore.Http.StatusCodes;
 using StockExchange.Api.Interfaces;
 using StockExchange.Core.Filters;
@@ -26,6 +27,7 @@ public class TradeController : ControllerBase
     }
 
     [HttpPost]
+    //[Authorize("Api.Reader")]
     [ValidateModel]
     [ProducesResponseType(typeof(ApiResponse<ICollection<string>>), Status200OK)]
     [ProducesResponseType(typeof(ApiErrorResponse), Status500InternalServerError)]
