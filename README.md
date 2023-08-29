@@ -9,9 +9,9 @@ This README will guide you through the features, system design, data models, enh
 ## Components 
 The London Stock Exchange API comprises the following key components:
 
-#API Layer:# This layer handles incoming HTTP requests with minor validation. It exposes two endpoints:
-POST api/v1/trades: Authorized brokers can submit trade notifications.
-GET api/v1/stocks: Provides stock-related information, including the current stock value, values for all stocks, and values for a range of stocks (average price).
+**API Layer:** This layer handles incoming HTTP requests with minor validation. It exposes two endpoints:
+- POST api/v1/trades: Authorized brokers can submit trade notifications.
+- GET api/v1/stocks: Provides stock-related information, including the current stock value, values for all stocks, and values for a range of stocks (average price).
 The API contains a basic Swagger doc describing the endpoints and models
 
 Service Layer: Responsible data processing, orchestration, price calculation and response models. This layer consists of 2 parts - the interfacing from the API layer and a domain layer (for reusablity) that calls out to the database layer using the repository pattern. 
