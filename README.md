@@ -23,16 +23,16 @@ The API contains a basic Swagger doc describing the endpoints and models
 The core data models shared across the application consists of two main entities:
 
 **TradeTransaction:**
-**TransactionId** (int, unique value of the transaction and primary key)
-**Symbol** (string, ticker symbol)
-**Price** (decimal, trade price)
-**Shares** (decimal, number of shares)
-**BrokerId** (int, unique ID of the authorized broker)
-**TradeDateTime** (dateTime, trade timestamp)
+- **TransactionId** (int, unique value of the transaction and primary key)
+- **Symbol** (string, ticker symbol)
+- **Price** (decimal, trade price)
+- **Shares** (decimal, number of shares)
+- **BrokerId** (int, unique ID of the authorized broker)
+- **TradeDateTime** (dateTime, trade timestamp)
 
 **StockValue:**
-**Symbol** (string, ticker symbol)
-**Value** (decimal, average stock value across transactions)
+- **Symbol** (string, ticker symbol)
+- **Value** (decimal, average stock value across transactions)
 
 # Enhancements
 For enhanced performance, security, and scalability, the recommended approach is to deploy the API to Azure using the following components:
