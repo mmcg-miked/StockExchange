@@ -19,6 +19,9 @@ The API contains a basic Swagger doc describing the endpoints and models
 
 **Database Layer:** Utilizes Microsoft SQL Server Express as the relational database to store transaction data. It can be replaced with other relational databases effortlessly. Entity Framework Core facilitates object-relational mapping. For simplicity the database only consists of a single table for storing trades and stock prices. 
 
+
+The app also consists of a 'core' component (shared library) that could provide some common fetaures like reusable extention methods, an API response builder to ensure any and all API responses conform to the same structure and a basic validation filter to ensure all models conform to the masic structure and contraints.
+
 ## Data Model
 The core data models shared across the application consists of two main entities:
 
