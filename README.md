@@ -38,10 +38,15 @@ The core data models shared across the application consists of two main entities
 For enhanced performance, security, and scalability, the recommended approach is to deploy the API to Azure using the following components:
 
 **Azure Active Directory (Azure AD):** For robust authentication and authorization, leverage Azure AD with an app registration containing read/write roles.
+
 **Azure Key Vault:** Securely manage and retrieve secrets using Azure Key Vault.
+
 **Azure App Service:** Utilize Azure App Service for automatic scaling, resiliency, easy authentication, and other security features.
+
 **Azure API Management (APIM):** Employ APIM as a front-end facade to the backend service, offering credential verification, rate limits, caching, metrics, logs, traces, and message validation.
+
 **Azure SQL Database:** Store transaction and stock data in Azure SQL Database, providing reliability and performance.
+
 **Application Insights:** Enhance logging, application performance monitoring, diagnostics, and dashboards using Application Insights.
 
 ###Additional enhancements include:
