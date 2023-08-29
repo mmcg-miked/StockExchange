@@ -49,7 +49,8 @@ For enhanced performance, security, and scalability, the recommended approach is
 
 **Application Insights:** Enhance logging, application performance monitoring, diagnostics, and dashboards using Application Insights.
 
-###Additional enhancements include:
+
+##Additional enhancements include:
 
 Integrate middleware functionality for claim token validation to ensure proper authorization.
 
