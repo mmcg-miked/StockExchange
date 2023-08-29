@@ -52,7 +52,7 @@ For enhanced performance, security, and scalability, the recommended approach is
 
 ### Additional enhancements include:
 1. Integrate middleware functionality for claim token validation to ensure proper authorization.
-2. Improve message models:
+2. Improve message models
          - Use GUIDs for TransactionId and BrokerId.
          - Utilize an enum for the Symbol field, validating against known ticker symbols.
 4. Database design for normalised data.
