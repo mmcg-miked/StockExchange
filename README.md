@@ -53,9 +53,10 @@ For enhanced performance, security, and scalability, the recommended approach is
 ### Additional enhancements include:
 1. Integrate middleware functionality for claim token validation to ensure proper authorization.
 2. Improve message models:
-   -- Use GUIDs for TransactionId and BrokerId.
-   -- Utilize an enum for the Symbol field, validating against known ticker symbols.
-3. Segregate API and database models, introducing mappers for seamless translation.
-4. Enhance code documentation with XML comments to improve Swagger documentation and developer experience.
-5. Implement integration tests to ensure robust functionality.
-6. Refactor project structure in alignment with the 'Clean Architecture' principles for better maintainability and separation of concerns.
+   Use GUIDs for TransactionId and BrokerId.
+   Utilize an enum for the Symbol field, validating against known ticker symbols.
+3. Database design for normalised data.
+4. Segregate API and database models, introducing mappers for seamless translation.
+5. Enhance code documentation with XML comments to improve Swagger documentation and developer experience.
+6. Implement integration tests to ensure robust functionality.
+7. Refactor project structure in alignment with the 'Clean Architecture' principles for better maintainability and separation of concerns.
